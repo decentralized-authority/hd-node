@@ -12,7 +12,6 @@ import { pbkdf2 } from "@ethersproject/pbkdf2";
 import { defineReadOnly } from "@ethersproject/properties";
 import { sha256 } from "@ethersproject/sha2";
 import { Wordlist, wordlists } from "@ethersproject/wordlists";
-import { addressFromPublickey } from "@pokt-network/pocket-js/dist/index"
 import { getMasterKeyFromSeed, getPublicKey, derivePath } from "ed25519-hd-key"
 import aesjs from "aes-js"
 import nacl from "tweetnacl"
@@ -20,7 +19,7 @@ import nacl from "tweetnacl"
 import { Logger } from "@ethersproject/logger";
 import { version } from "./_version";
 
-import { computeFingerprint } from './utils'
+import { addressFromPublickey, computeFingerprint } from './utils'
 
 const logger = new Logger(version);
 
